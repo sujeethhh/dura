@@ -1,26 +1,302 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --theme-color: #0D5EF4;
+  --theme-color2: #F20F10;
+  --title-color: #0F2239;
+  --body-color: #4D5765;
+  --smoke-color: #F3F7FB;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --light-color: #72849B;
+  --yellow-color: #FFB539;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --border-color: #ecf1f9;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jost), var(--font-roboto), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--body-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: var(--white-color);
+}
+
+.btn-primary {
+  background: var(--theme-color);
+  color: var(--white-color);
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--theme-color);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--theme-color);
+}
+
+.btn-secondary {
+  background: var(--theme-color2);
+  color: var(--white-color);
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--theme-color2);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: transparent;
+  color: var(--theme-color2);
+}
+
+.section-title {
+  color: var(--title-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  color: var(--theme-color);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--theme-color) 0%, var(--theme-color2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Edura Specific Styles */
+.th-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.th-hero-wrapper {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.hero-subtitle {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--theme-color);
+  background: rgba(13, 94, 244, 0.1);
+  padding: 8px 20px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--title-color);
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  font-size: 18px;
+  color: var(--body-color);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.feature-area {
+  position: relative;
+}
+
+.feature-card {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.course-box {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.course-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.course-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.course-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.course-box:hover .course-img img {
+  transform: scale(1.05);
+}
+
+.course-content {
+  padding: 30px;
+}
+
+.course-price {
+  color: var(--theme-color2);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.course-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.rating-stars {
+  color: #FFB539;
+}
+
+/* Animations */
+@keyframes heroripple {
+  0% {
+    transform: translate3d(-50%, 50%, 0);
+    opacity: 0.5;
+    width: 40px;
+    height: 40px;
+  }
+  100% {
+    transform: translate3d(-50%, 50%, 0);
+    opacity: 0;
+    width: 310px;
+    height: 310px;
+  }
+}
+
+.ripple-1, .ripple-2, .ripple-3, .ripple-4, .ripple-5, .ripple-6 {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 30px;
+  bottom: -10px;
+  background-color: transparent;
+  border: 3px solid rgba(13, 94, 244, 0.3);
+  border-radius: 50%;
+  transform: translate3d(-50%, 50%, 0);
+  animation: heroripple 8s ease-out infinite;
+}
+
+.ripple-1 { animation-delay: 0s; }
+.ripple-2 { animation-delay: 1s; }
+.ripple-3 { animation-delay: 2s; }
+.ripple-4 { animation-delay: 3s; }
+.ripple-5 { animation-delay: 4s; }
+.ripple-6 { animation-delay: 5s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 3s ease-in-out infinite 1.5s;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .btn-group {
+    flex-direction: column;
+  }
+  
+  .feature-card {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
 }
