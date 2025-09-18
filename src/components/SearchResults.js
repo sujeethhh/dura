@@ -184,8 +184,9 @@ export default function SearchResults({ query }) {
                   </div>
                   <h3 className="text-xl font-semibold text-gray-600 mb-2">No results found</h3>
                   <p className="text-gray-500 mb-6">
-                    We couldn't find any courses matching "{searchTerm}". Try different keywords or browse our categories.
-                  </p>
+  We couldn&apos;t find any courses matching &quot;{searchTerm}&quot;. Try different keywords or browse our categories.
+</p>
+
                   <Link 
                     href="/courses" 
                     className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
@@ -204,8 +205,9 @@ export default function SearchResults({ query }) {
               </div>
               <h3 className="text-xl font-semibold text-gray-600 mb-2">Start Your Search</h3>
               <p className="text-gray-500 mb-6">
-                Enter keywords above to find courses, instructors, or topics you're interested in.
-              </p>
+  Enter keywords above to find courses, instructors, or topics you&apos;re interested in.
+</p>
+
               
               <div className="grid md:grid-cols-4 gap-4 max-w-2xl mx-auto">
                 {['Web Development', 'Data Science', 'Design', 'Marketing'].map((category) => (

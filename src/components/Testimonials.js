@@ -66,8 +66,9 @@ export default function Testimonials() {
             <span className="text-gradient">Say About Us</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our students have to say about their learning experience.
-          </p>
+  Don&apos;t just take our word for it. Here&apos;s what our students have to say about their learning experience.
+</p>
+
         </div>
 
         <div className="relative max-w-4xl mx-auto">

@@ -277,10 +277,10 @@ export default function CoursesContent() {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Can't Find What You're Looking For?
+              Can&apos;t Find What You&apos;re Looking For?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              We're constantly adding new courses. Contact us to suggest a course or get notified when new content is available.
+              We&apos;re constantly adding new courses. Contact us to suggest a course or get notified when new content is available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">

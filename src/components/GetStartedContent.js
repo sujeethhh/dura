@@ -196,7 +196,7 @@ export default function GetStartedContent() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              What's Your Current Level?
+              What&apos;s Your Current Level?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Help us personalize your learning experience by selecting your current skill level.

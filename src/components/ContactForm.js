@@ -39,8 +39,9 @@ export default function ContactForm() {
             Contact Us
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Have questions about our courses or need help? We're here to assist you on your learning journey.
-          </p>
+  Have questions about our courses or need help? We&apos;re here to assist you on your learning journey.
+</p>
+
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
@@ -49,8 +50,9 @@ export default function ContactForm() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
               <p className="text-gray-600 mb-8">
-                We'd love to hear from you. Send us a message and we'll respond as soon as possible.
-              </p>
+  We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
+</p>
+
             </div>
 
             <div className="space-y-6">
