@@ -20,13 +20,13 @@ export default function TermsPage() {
             <div className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Acceptance of Terms</h2>
               <p className="text-gray-700 mb-4">
-                By accessing and using Edura's services, you accept and agree to be bound by the 
+                By accessing and using Edura&apos;s services, you accept and agree to be bound by the 
                 terms and provision of this agreement.
               </p>
               
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Use License</h2>
               <p className="text-gray-700 mb-4">
-                Permission is granted to temporarily access the materials on Edura's website for 
+                Permission is granted to temporarily access the materials on Edura&apos;s website for 
                 personal, non-commercial transitory viewing only.
               </p>
               

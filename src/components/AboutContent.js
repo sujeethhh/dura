@@ -62,8 +62,8 @@ export default function AboutContent() {
               About <span className="text-blue-600">Edura</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              We're on a mission to make quality education accessible to everyone, everywhere. 
-              Through innovative online learning experiences, we're transforming how people learn and grow.
+              We&apos;re on a mission to make quality education accessible to everyone, everywhere. 
+              Through innovative online learning experiences, we&apos;re transforming how people learn and grow.
             </p>
             <Link href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
               Get in Touch
@@ -112,7 +112,7 @@ export default function AboutContent() {
                   practical, industry-relevant skills.
                 </p>
                 <p>
-                  Today, we're proud to offer hundreds of courses across multiple disciplines, taught by 
+                  Today, we&apos;re proud to offer hundreds of courses across multiple disciplines, taught by 
                   industry experts and designed to help our students achieve their personal and professional goals.
                 </p>
               </div>
