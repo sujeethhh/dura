@@ -123,7 +123,7 @@ export default function SearchResults({ query }) {
             <>
               <div className="mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                  Search Results for "{searchTerm}"
+                  Search Results for &quot;{searchTerm}&quot;
                 </h2>
                 <p className="text-gray-600">
                   Found {results.length} course{results.length !== 1 ? 's' : ''}
@@ -184,8 +184,8 @@ export default function SearchResults({ query }) {
                   </div>
                   <h3 className="text-xl font-semibold text-gray-600 mb-2">No results found</h3>
                   <p className="text-gray-500 mb-6">
-  We couldn&apos;t find any courses matching &quot;{searchTerm}&quot;. Try different keywords or browse our categories.
-</p>
+                    We couldn&apos;t find any courses matching &quot;{searchTerm}&quot;. Try different keywords or browse our categories.
+                  </p>
 
                   <Link 
                     href="/courses" 
@@ -205,10 +205,9 @@ export default function SearchResults({ query }) {
               </div>
               <h3 className="text-xl font-semibold text-gray-600 mb-2">Start Your Search</h3>
               <p className="text-gray-500 mb-6">
-  Enter keywords above to find courses, instructors, or topics you&apos;re interested in.
-</p>
+                Enter keywords above to find courses, instructors, or topics you&apos;re interested in.
+              </p>
 
-              
               <div className="grid md:grid-cols-4 gap-4 max-w-2xl mx-auto">
                 {['Web Development', 'Data Science', 'Design', 'Marketing'].map((category) => (
                   <button
@@ -224,8 +223,6 @@ export default function SearchResults({ query }) {
           )}
         </div>
       </section>
-
-
     </>
   )
 }

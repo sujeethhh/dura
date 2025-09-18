@@ -82,8 +82,9 @@ export default function Testimonials() {
               </div>
               
               <blockquote className="text-xl lg:text-2xl text-gray-700 leading-relaxed mb-8 italic">
-                "{testimonials[currentSlide].text}"
-              </blockquote>
+  &quot;{testimonials[currentSlide].text}&quot;
+</blockquote>
+
               
               <div className="flex items-center justify-center space-x-4">
                 <img 
